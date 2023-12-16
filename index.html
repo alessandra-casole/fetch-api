@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio estivo - Fetch</title>
+    <!-- Bootstrap v.5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome v.6.2.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="min-vh-100">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-md py-md-3 bg-black">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-white fw-bold" href="#"
+            >Start Bootstrap</a
+          >
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-white-50 fw-bold"
+                  href="#"
+                  >Sign Up</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-white-50 fw-bold"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Hero section -->
+      <section
+        class="hero-section position-relative d-flex align-items-center text-center min-vh-100"
+      >
+        <div class="overlay position-absolute top-0 w-100 h-100"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="hero-txt text-light">
+                <h1 class="mb-md-0">You can't arrest me!</h1>
+                <h2>I'm a rockstar</h2>
+              </div>
+              <a
+                class="btn rounded-pill mt-4 px-4 px-md-5 text-light text-uppercase fw-bold"
+                role="button"
+                data-bs-toggle="button"
+                href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dynamic Section -->
+      <section class="dynamic-section py-5">
+        <!-- Spinner -->
+        <div class="text-center" id="spin">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <div class="container gx-5">
+          <!-- 1st row -->
+          <div
+            class="row align-items-center dynamic-items gx-md-5 gx-xl-4"
+          ></div>
+          <!-- 2nd row -->
+          <div
+            class="row align-items-center dynamic-items flex-md-row-reverse reverse-item gx-md-5 gx-xl-4"
+          ></div>
+          <!-- 3rd row -->
+          <div
+            class="row align-items-center dynamic-items gx-md-5 gx-xl-4"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="container gx-5 pt-md-3 pt-lg-4">
+          <!-- 1st row - Title -->
+          <div class="row mb-5 text-center text-md-start">
+            <div class="col-12 mb-3 mb-md-4">
+              <h2 class="fw-bold">Get In Touch</h2>
+              <p class="text-secondary">
+                Feel free to contact us any time. We will get back to you as
+                soon as we can!
+              </p>
+            </div>
+          </div>
+          <!-- 2nd row -->
+          <div class="row shadow-lg rounded-1 gx-2">
+            <!-- Send Message - left side -->
+            <div class="col-12 col-md-6 py-5 box-pd">
+              <h3 class="fw-bolder mb-5 text-center text-md-start">
+                Send us a Message
+              </h3>
+
+              <!-- Form -->
+              <form action="" method="post" class="mb-3 mb-md-0">
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label text-secondary"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="email"
+                    placeholder="email@example.com"
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                  <label for="message" class="form-label text-secondary"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                  ></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="btn rounded-pill mt-4 px-4 px-md-5 text-light text-uppercase d-block m-auto m-md-0 ms-md-auto fw-bold"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <!-- Contact Information - right-hand side -->
+            <div
+              class="col-12 col-md right-side py-5 d-flex flex-column b-radius box-pd"
+            >
+              <h3
+                class="fw-bolder mb-5 box-title ps-0 text-center text-md-start"
+              >
+                Contact Information
+              </h3>
+
+              <!-- Address -->
+              <div class="px-4 px-sm-5 px-md-0">
+                <div class="info">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div class="information-icon">
+                        <i class="fa-solid fa-location-dot info-icon"></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="my-0 txt-info ps-0">
+                        123 Oak Avenue <br />
+                        Springfield, IL 12345
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone number -->
+                <div class="info">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div class="information-icon">
+                        <i
+                          class="fa-solid fa-mobile-screen-button info-icon"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="my-0 txt-info ps-0">(800) 900 200 300</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mail -->
+                <div class="info">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div class="information-icon">
+                        <i class="fa-regular fa-envelope-open info-icon"></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="my-0 txt-info ps-0">info@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social media -->
+              <section
+                class="social-container px-0 mt-auto d-flex justify-content-around justify-content-md-start"
+              >
+                <!-- Twitter -->
+                <a
+                  class="me-md-4 pe-md-2"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  role="button"
+                  title="Go to Twitter profile"
+                  ><i class="fa-brands fa-x-twitter info-icon"></i
+                ></a>
+                <!-- Linkedin -->
+                <a
+                  class="me-md-4 pe-md-2"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  role="button"
+                  title="Go to LinkedIn profile"
+                >
+                  <i class="fa-brands fa-linkedin-in info-icon"></i
+                ></a>
+                <!-- Instagram -->
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  role="button"
+                  title="Go to IG profile"
+                  ><i class="fa-brands fa-instagram info-icon"></i
+                ></a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4 py-lg-5">
+      <p class="text-center text-light mb-0 copy">
+        Copyright &copy; Your Website 2023
+      </p>
+    </footer>
+
+    <!-- Script Bootstrap v.5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
